@@ -8,7 +8,15 @@ format:
 jupyter: julia-1.8
 ---
 
-## Parametric Plots
+## Tabular Output
+
+```{julia}
+using DataFrames
+x = DataFrame(x=1:10, y=1:10);
+x
+```
+
+## Parametric Plot
 
 Plot function pair (x(u), y(u)). 
 See @fig-parametric for an example.
@@ -18,11 +26,5 @@ See @fig-parametric for an example.
 #| fig-cap: "Parametric Plots"
 
 using Plots
-
-plot(sin, 
-     x->sin(2x), 
-     0, 
-     2pi, 
-     leg=false, 
-     fill=(0,:lavender))
+plot(sin, x->sin(2x), 0, 2pi, leg=false, fill=(0,:lavender))
 ```
