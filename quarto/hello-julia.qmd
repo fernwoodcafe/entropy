@@ -22,7 +22,7 @@ using Plots
 plot(sin, 
      x->sin(2x), 
      0, 
-     2p, 
+     2pi, 
      leg=false, 
      fill=(0,:lavender))
 ```

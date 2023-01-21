@@ -39,3 +39,5 @@ catch e
   @warn "Revise init" exception=(e, catch_backtrace())
 end
 ```
+
+Run `quarto preview .\hello-julia.qmd` after adding content to the qmd file.
