@@ -1,0 +1,7 @@
+# Here we have a random plot
+
+```julia
+using Plots
+
+Plots.plot(rand(10))
+```

@@ -1,0 +1,16 @@
+---
+title: "Plots Demo"
+author: "Shaun Luttin"
+format:
+  html:
+    code-fold: true
+jupyter: julia-1.8
+---
+
+```{julia}
+"Hello world."
+
+using Interact
+ui = button()
+display(ui)
+```
